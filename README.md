@@ -8,7 +8,6 @@
 - Gradle
 - Springboot
 - SpringDataJpa
-- Querydsl
 - mysql
 - Lombok
 
