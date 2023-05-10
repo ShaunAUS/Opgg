@@ -16,7 +16,7 @@ public class OpggController {
 
     private final OpggService opggService;
 
-
+    //최근 5게임 전적 크롤링
     @GetMapping("/search/recent/{userId}")
     public void recentRecord(
         @PathVariable("userId") String userId
@@ -24,6 +24,7 @@ public class OpggController {
         opggService.getRecentInfo(userId);
     }
 
+    //해당 년도 평균 크롤링
     @GetMapping("/search/average/{userId}")
     public void averageRecord(
         @PathVariable("userId") String userId
