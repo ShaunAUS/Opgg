@@ -15,17 +15,14 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
-public class AverageRecord {
+public class FreeRankRecord {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String userId;
+    private String id;
+    private String championName;
+    private Integer winningRate;
+    private Integer playCnt;
+    private Integer averagePoint; //평점
 
-    private Long winCnt;
-    private Long loseCnt;
-    private Long averagePoint;
-
-    private Enum soloLank;
-
-    private Enum freeLank;
 }

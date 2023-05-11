@@ -1,5 +1,5 @@
 package com.example.opggProject.dto;
 
-public class RecentRecordDto {
+public class YearRecordDto {
 
 }
