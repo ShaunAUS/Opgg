@@ -15,18 +15,13 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
-//최근날짜 기준 5개의 데이터를 가져온다
-public class RecentRecord {
-
+public class SoloRankRecord {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private Integer killRate;
-
-    private Integer kill;
-
-    private Integer lose;
-    private Integer assist;
-    private Integer averagePoint; // 평점
+    private String id;
+    private String championName;
+    private Integer winningRate;
+    private Integer playCnt;
+    private Integer averagePoint; //평점
 }
