@@ -1,5 +1,5 @@
 package com.example.opggProject.dto;
 
-public class YearRecordDto {
+public class YearRecordDto extends BaseDto{
 
 }
