@@ -11,15 +11,20 @@ import org.springframework.stereotype.Service;
 public class OpggServiceImpl implements OpggService {
 
     @Override
-    public void getRecentInfo(String userId) throws IOException {
+    public void getFreeRankInfo(String userId) throws IOException {
         getOpggInfoByUserId(userId);
 
     }
 
 
     @Override
-    public void getAverageInfo(String userId) throws IOException {
+    public void getSoloRankInfo(String userId) throws IOException {
         getOpggInfoByUserId(userId);
+    }
+
+    @Override
+    public void getYearInfo(String userId) {
+
     }
 
     private static void getOpggInfoByUserId(String userId) throws IOException {

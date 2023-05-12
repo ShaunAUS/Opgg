@@ -4,8 +4,9 @@ import java.io.IOException;
 
 public interface OpggService {
 
-    void getRecentInfo(String userId) throws IOException;
+    void getFreeRankInfo(String userId) throws IOException;
 
-    void getAverageInfo(String userId) throws IOException;
+    void getSoloRankInfo(String userId) throws IOException;
 
+    void getYearInfo(String userId);
 }
