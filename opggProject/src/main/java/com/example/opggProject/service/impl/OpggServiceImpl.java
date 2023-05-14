@@ -5,9 +5,11 @@ import java.io.IOException;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Service;
 
 @Service
+@EnableScheduling
 public class OpggServiceImpl implements OpggService {
 
     @Override
